@@ -83,7 +83,7 @@ range(3) >> map(lambda x: x)
 ```py
 # Q: I don't want it to be the last argument
 # A: You can use the special implicit substitution identifier "_" (an underscore)
-# Superpipe will substitute the lefthand side into whereever it finds it
+# Superpipe will substitute the lefthand side into wherever it finds it
 
 5 >> print(_, "abc")
 # This prints "5 abc"
