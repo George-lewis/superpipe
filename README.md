@@ -81,9 +81,9 @@ range(3) >> map(lambda x: x)
 ```
 
 ```py
-# > But I don't want it to be the last argument!
-# You can use the special implicit substitution identifier "_" (an underscore)
-# Superpipe will substitute the lefthand side into where-ever it finds it
+# Q: I don't want it to be the last argument
+# A: You can use the special implicit substitution identifier "_" (an underscore)
+# Superpipe will substitute the lefthand side into whereever it finds it
 
 5 >> print(_, "abc")
 # This prints "5 abc"
@@ -96,8 +96,8 @@ range(3) >> map(lambda x: x)
 ```
 
 ```py
-# > But I want to call a method on the lefthand side!
-# You can do this via the _ identifier. In fact, you can use the underscore almost anywhere
+# Q: I want to call a method of the lefthand side
+# A: You can do this via the _ identifier. In fact, you can use the underscore almost anywhere
 
 "superpipe" >> _.title()
 # This is the same as "superpipe".title()
@@ -115,11 +115,11 @@ def foo(a, b, c):
     pass
 
 {"c": 1, "a": 2, "b": 3} >> foo(**_)
-# You can use star-expansion on _!
+# You can use star-expansion on _
 
 for x in range(3) >> map(lambda x: x * x):
     pass
-# You can use superpipes in loops!
+# It works in loops, too
 
 print(
     5
